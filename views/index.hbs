@@ -1,0 +1,13 @@
+{{#extends "base"}}
+    {{#block "content"}}
+    <a href="/create">create new movie</a>
+    {{#each data}}
+       <p>title: {{this.id}}, title: {{this.title}}, isbn: {{this.isbn}}
+           <a href="/update/{{this.id}}" class="btn btn-primary">update</a>
+           <a href="/delete/{{this.id}}" class="btn btn-danger">delete</a>
+       </p>
+    {{/each}}
+    {{/block}}
+{{/extends}}
+
+<p>hello world</p>

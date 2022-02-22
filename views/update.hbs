@@ -1,0 +1,13 @@
+{{#extends "base"}}
+    {{#block "content"}}
+
+    <form action="" method="POST">
+        <label for="">title</label>
+        <input type="text" name="title" value="{{book.title}}">
+        <label for="">isbn</label>
+        <input type="text" name="isbn" value="{{book.isbn}}">
+        <input type="submit">
+    </form>
+
+    {{/block}}
+{{/extends}}
